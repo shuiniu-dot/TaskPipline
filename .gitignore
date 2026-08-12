@@ -1,0 +1,23 @@
+# 排除 node_modules 目录及其下所有文件
+node_modules/
+
+# 排除 npm/yarn/pnpm 的日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 排除环境变量配置文件（保护敏感信息）
+.env
+.env.local
+.env.*.local
+
+# 排除打包/编译输出目录（根据实际项目框架可选）
+dist/
+build/
+.next/
+.nuxt/
+
+# 排除系统自动生成的文件
+.DS_Store
+Thumbs.db

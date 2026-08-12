@@ -1,0 +1,65 @@
+{
+  "name": "ai-task-pipeline",
+  "displayName": "AI Task Pipeline",
+  "description": "AI-powered task scheduling with module conflict avoidance — four-pool Kanban pipeline",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aiTaskPipeline.openDashboard",
+        "title": "Open AI Task Pipeline Dashboard",
+        "category": "AI Task Pipeline"
+      },
+      {
+        "command": "aiTaskPipeline.addTask",
+        "title": "Add New Task",
+        "category": "AI Task Pipeline"
+      },
+      {
+        "command": "aiTaskPipeline.toggleScheduler",
+        "title": "Toggle Scheduler",
+        "category": "AI Task Pipeline"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ai-task-pipeline",
+          "title": "AI Task Pipeline",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "ai-task-pipeline": [
+        {
+          "id": "aiTaskPipeline.sidebar",
+          "name": "Pipeline Overview",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.90.0",
+    "@vscode/vsce": "^3.9.2",
+    "typescript": "^5.4.0"
+  }
+}
