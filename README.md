@@ -4,7 +4,7 @@ AI-powered task scheduling extension for VS Code with module conflict avoidance.
 
 ## Features
 
-- **Four-pool Kanban pipeline**: Todo → In Progress → Pending Review → Completed (plus Terminated)
+- **Five-pool Kanban pipeline**: Todo → In Progress → Pending Review → Completed / Terminated
 - **Automatic module conflict detection**: Prevents two tasks from modifying the same code module simultaneously
 - **AI agent integration**: Uses `vscode.lm` API for autonomous task processing with tool calling
 - **Operation logging**: Full audit trail of all file reads, writes, edits, and commands
@@ -20,3 +20,7 @@ AI-powered task scheduling extension for VS Code with module conflict avoidance.
 4. Review AI changes in the Pending Review column — click "View Details" to see the operation log
 5. Click "View Diff" to open the native diff editor for any file modification
 6. Approve, reject (with reprocess/rollback options), or terminate tasks
+
+## License
+
+[MIT](LICENSE)

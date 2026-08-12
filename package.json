@@ -4,6 +4,11 @@
   "description": "AI-powered task scheduling with module conflict avoidance — four-pool Kanban pipeline",
   "version": "0.1.0",
   "publisher": "local",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/local/ai-task-pipeline"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
